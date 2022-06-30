@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="icon" sizes="32x32" href="/assests/steak-favicon.png">
+
+    <!-- JavaScript files -->
+    <script src="script.js" defer></script>
+
+    <script src="store.js" async></script>
+</head>
+<body>
+    
+    <!-- Header starts here -->
+
+    <header class="header">
+
+    <a href="#" class="logo">
+     <i class="fa fa-cutlery"></i> Steakhouse</a>
+
+    <nav class="navbar">
+        <a href="#home" class="scroll-link">home</a>
+        <a href="#features" class="scroll-link">features</a>
+        <a href="#fooditems" class="scroll-link">food items</a>
+        <a href="#review" class="scroll-link">review</a>
+        <a href="#blogs" class="scroll-link">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <section class="shopping-cart">
+        <h2> cart</h2>
+
+        <div class="box cart-row">
+                <span class="item">item</span>
+                <span class="price">price</span>
+                <span class="quantity">quantity </span>
+            </div>
+
+        <div class="cart-items">
+<!--            
+        <div class="items cart-row">
+                <img class="item-image" src="/assests/steak-10.jpg" width="100" height="100">
+                <span class="item-title">title</span>
+                <span class="item-price items-column">$99.99</span>
+
+            <div class="item-quantity items-column">
+                <input class="quantity-input" type="number" value="1">
+            </div>
+                <button class="btn-remove" type="button"> <i class="fa fa-trash"></i></button> 
+            
+        </div> -->
+        </div>
+
+        <div class="total"> 
+            <strong class="cart-total"> total </strong>
+            <span class="cart-price">$0</span>
+            </div>
+        <a href="#" class="btn btn-checkout">checkout</a>
+        </section>
+
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <label> username </label>
+        <input type="text" placeholder="username or email address" class="box">
+        <label> password</label>
+        <input type="password" placeholder="password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form> 
+
+    </header>
+    <!-- End of header-->
+
+    <!-- Home section starts here -->
+
+    <section class="home" id="home">
+
+    <div class="content">
+        <h1>welcome to steakhouse</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero nostrum veniam facere tempore nisi.</p>
+        <a href="#fooditems" class="btn">buy now</a>
+    </div>
+
+    </section>
+    <!-- End of home section -->
+
+    <!-- Feature section starts here -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="/assests/features-img1.jpg" alt="">
+            <h3>All steaks</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="/assests/features-img2.jpg" alt="">
+            <h3>free delivery</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="/assests/features-img3.jpg" alt="">
+            <h3>easy payments</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- End of feature section -->
+
+<!-- Food items section starts here -->
+
+<section class="fooditems" id="fooditems">
+
+    <h1 class="heading"> our <span>food items</span> </h1>
+
+    <div class="product">
+
+            <div class="box">
+                <img class="image" src="/assests/steak-1.jpeg" alt="">
+                <h3 class="shop-item">steak-1</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-2.jpg" alt="">
+                <h3 class="shop-item">steak-2</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-3.jpg" alt="">
+                <h3 class="shop-item">steak-3</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-4.jpg" alt="">
+                <h3 class="shop-item">steak-4</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-5.jpg" alt="">
+                <h3 class="shop-item">steak-5</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-6.jpg" alt="">
+                <h3 class="shop-item">steak-6</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-7.jpg" alt="">
+                <h3 class="shop-item">steak-7</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-8.jpg" alt="">
+                <h3 class="shop-item" >steak-8</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-9.jpg" alt="">
+                <h3 class="shop-item">steak-9</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-10.jpg" alt="">
+                <h3 class="shop-item" >steak-10</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-11.jpg" alt="">
+                <h3 class="shop-item">steak-11</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-12.jpg" alt="">
+                <h3 class="shop-item">steak-12</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-13.jpg" alt="">
+                <h3 class="shop-item">steak-13</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-14.jpg" alt="">
+                <h3 class="shop-item" >steak-14</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-15.jpg" alt="">
+                <h3 class="shop-item" >steak-15</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-16.jpeg" alt="">
+                <h3 class="shop-item" >steak-16</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-17.jpg" alt="">
+                <h3 class="shop-item" >steak-17</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-18.jpg" alt="">
+                <h3 class="shop-item">steak-18</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-19.jpeg" alt="">
+                <h3 class="shop-item">steak-19</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-20.jpg" alt="">
+                <h3 class="shop-item" >steak-20</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-21.jpg" alt="">
+                <h3 class="shop-item">steak-21</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-22.jpg" alt="">
+                <h3 class="shop-item">steak-22</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-23.jpg" alt="">
+                <h3 class="shop-item">steak-23</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-24.jpeg" alt="">
+                <h3 class="shop-item">steak-24</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-25.jpg" alt="">
+                <h3 class="shop-item">steak-25</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-26.jpg" alt="">
+                <h3 class="shop-item" >steak-26</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-27.jpg" alt="">
+                <h3 class="shop-item">steak-27</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-28.jpg" alt="">
+                <h3 class="shop-item">steak-28</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-29.jpg" alt="">
+                <h3 class="shop-item">steak-29</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-30.jpg" alt="">
+                <h3 class="shop-item">steak-30</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-31.jpg" alt="">
+                <h3 class="shop-item" >steak-31</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-32.jpeg" alt="">
+                <h3 class="shop-item">steak-32</h3>
+                <div class="special-price"> Special price: $135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-33.jpg" alt="">
+                <h3 class="shop-item">steak-33</h3>
+                <div class="special-price"> Special price: 135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-34.jpg" alt="">
+                <h3 class="shop-item">steak-34</h3>
+                <div class="special-price"> Special price: 135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-35.jpg" alt="">
+                <h3 class="shop-item" >steak-35</h3>
+                <div class="special-price"> Special price: 135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-36.jpg" alt="">
+                <h3 class="shop-item" >steak-36</h3>
+                <div class="special-price"> Special price: 135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-37.jpg" alt="">
+                <h3 class="shop-item">steak-37</h3>
+                <div class="special-price"> Special price: 135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-38.jpeg" alt="">
+                <h3 class="shop-item">steak-38</h3>
+                <div class="special-price"> Special price: 135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-39.jpg" alt="">
+                <h3 class="shop-item">steak-39</h3>
+                <div class="special-price"> Special price: 135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img class="image" src="/assests/steak-40.jpg" alt="">
+                <h3 class="shop-item">steak-40</h3>
+                <div class="special-price"> Special price: 135.99/- </div>
+                <div class="price"> $214.99/- </div>
+                <div class="discount"> save 25% <i class="fa fa-tags"></i> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn cart-btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- End of fooditems-->
+
+<!-- Review section starts here -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="review-box">
+
+            <div class="box">
+                <img src="assests/pic-1.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="/assests/pic-2.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="assests/pic-3.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="assests/pic-4.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+    
+        </div>
+
+</section>
+<!-- End of review section -->
+
+<!-- Blog section starts here -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="/assests/steak-10.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 28th June, 2022 </a>
+                </div>
+                <h3> Everything about steak!!!!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, expedita.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/assests/steak-18.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 28th June, 2022 </a>
+                </div>
+                <h3>steak- the chopping blog</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, expedita.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/assests/steak-25.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 28th June, 2022 </a>
+                </div>
+                <h3>How to cook steak indoors...</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, expedita.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- End of blog section -->
+
+<!-- Footer starts here -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> steakhouse <i class="fas fa-cutlery"></i> </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> xxxxxxxxxxx@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> hyderabad, india - 500059 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> fooditems </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="assests/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> cutecoder96 </span> | all rights reserved </div>
+
+</section>
+
+<!-- End of footer -->
+
+<a class="scroll-link top-link" href="#home">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+</body>
+</html>
